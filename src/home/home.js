@@ -15,13 +15,17 @@ function createDOMElements(container){
     const homeImage = document.createElement("img");
     homeImage.src = stoveImg;
     homeImage.height = 240;
-    const heroPara = document.createElement("p");
+    const heroParaDiv = document.createElement("div");
+    heroParaDiv.classList.add("hero-para-div");
+    const heroPara1 = document.createElement("p");
+    const heroPara2 = document.createElement("p");
     heroHeader.textContent = "Wood-Fired Perfection Since 2016";
-    heroPara.textContent = 
+    heroPara1.textContent = 
     `Experience authentic Neapolitan pizza crafted with passion and baked at 480°C in our handmade wood-fired oven.
-    Every pie is a masterpiece of charred crust, house-made sauce, and the finest Italian ingredients.
-    From classic Margheritas to bold, creative combinations, we bring the soul of Naples to your table.`;
-    heroContentDiv.append(homeImage, heroPara);
+    Every pie is a masterpiece of charred crust, house-made sauce, and the finest Italian ingredients.`;
+    heroPara2.textContent = "From classic Margheritas to bold, creative combinations, we bring the soul of Naples to your table.";
+    heroParaDiv.append(heroPara1, heroPara2);
+    heroContentDiv.append(homeImage, heroParaDiv);
     heroDiv.append(heroHeader,heroContentDiv);
 
     // opening hours section
