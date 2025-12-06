@@ -4,11 +4,11 @@ import stoveImg from "./stove.jpeg";
 function createDOMElements(container){
     // home container
     const homeDiv = document.createElement("div");
-    homeDiv.classList.add("home-container");
+    homeDiv.classList.add("top-container");
 
     // hero section
     const heroDiv = document.createElement("div");
-    heroDiv.classList.add("hero-container");
+    heroDiv.classList.add("sub-container");
     const heroContentDiv = document.createElement("div");
     heroContentDiv.classList.add("hero-content-container");
     const heroHeader = document.createElement("h2");
@@ -30,7 +30,7 @@ function createDOMElements(container){
 
     // opening hours section
     const openingHoursDiv = document.createElement("div");
-    openingHoursDiv.classList.add("opening-hours-container");
+    openingHoursDiv.classList.add("sub-container");
     const hoursHeader = document.createElement("h2");
     const hoursPara1 = document.createElement("p");
     const hoursPara2 = document.createElement("p");
@@ -43,7 +43,7 @@ function createDOMElements(container){
 
     // location section
     const locationDiv = document.createElement("div");
-    locationDiv.classList.add("location-container");
+    locationDiv.classList.add("sub-container");
     const locationHeader = document.createElement("h2");
     const locationPara = document.createElement("p");
     const contactsPara = document.createElement("p");
