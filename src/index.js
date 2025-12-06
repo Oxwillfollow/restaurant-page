@@ -1,5 +1,6 @@
 import { createDOMElements as createHome } from "./home/home.js";
 import { createDOMElements as createMenu } from "./menu/menu.js";
+import { createDOMElements as createAbout } from "./about/about.js";
 import './styles.css';
 
 const cacheDOM = (function(){
@@ -19,7 +20,7 @@ const cacheDOM = (function(){
 function bindEvents(){
     cacheDOM.homeBtn.addEventListener("click", () => openHome());
     cacheDOM.menuBtn.addEventListener("click", () => openMenu());
-    //cacheDOM.aboutBtn.addEventListener("click", () => openHome());
+    cacheDOM.aboutBtn.addEventListener("click", () => openAbout());
 }
 
 function removeAllChildren(domElement){
@@ -36,6 +37,11 @@ function openHome(){
 function openMenu(){
     removeAllChildren(cacheDOM.contentDiv);
     createMenu(cacheDOM.contentDiv);
+}
+
+function openAbout(){
+    removeAllChildren(cacheDOM.contentDiv);
+    createAbout(cacheDOM.contentDiv);
 }
 
 function init(){

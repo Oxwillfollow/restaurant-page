@@ -10,7 +10,7 @@ function createDOMElements(container){
     const heroDiv = document.createElement("div");
     heroDiv.classList.add("sub-container");
     const heroContentDiv = document.createElement("div");
-    heroContentDiv.classList.add("hero-content-container");
+    heroContentDiv.classList.add("sub-row-container");
     const heroHeader = document.createElement("h2");
     const homeImage = document.createElement("img");
     homeImage.src = stoveImg;

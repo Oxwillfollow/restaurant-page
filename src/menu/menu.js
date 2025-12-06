@@ -2,7 +2,7 @@ export { createDOMElements };
 import margheritaImg from './margherita.jpg';
 import prosciuttoImg from './prosciutto.jpg';
 import quattroFormaggiImg from './quattroFormaggi.jpg';
-import placeholderImg from './placeholder.jpg';
+import placeholderImg from '../placeholder.jpg';
 
 function createDOMElements(container){
     // menu container
@@ -43,7 +43,7 @@ function createDOMElements(container){
 
 function createMenuItemDOMElement(name, price, image, description){
     const menuItemDiv = document.createElement("div");
-    menuItemDiv.classList.add("menu-item");
+    menuItemDiv.classList.add("sub-row-container");
     const menuItemContentDiv = document.createElement("div");
     menuItemContentDiv.classList.add("menu-item-content");
     const menuItemImg = document.createElement("img");

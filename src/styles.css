@@ -15,7 +15,7 @@ body {
     background-color: var(--background-color);
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     min-height: 100vh;
     margin: 0;
 }
@@ -30,6 +30,13 @@ header {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        color: rgb(251, 249, 236);
+        text-shadow: 3px 3px 6px rgb(138, 50, 0);
+    }
 }
 
 footer {
@@ -49,13 +56,6 @@ footer {
         text-decoration: none;
         cursor: pointer;
     }
-}
-
-h1 {
-    font-size: 2.5rem;
-    margin: 0;
-    color: rgb(251, 249, 236);
-    text-shadow: 3px 3px 6px var(--dark-color);
 }
 
 img {
@@ -111,7 +111,7 @@ div#content {
 .top-container {
     display: flex;
     flex-direction: column;
-    max-width: 900px;
+    width: 900px;
     gap: 2rem;
 
     .sub-container {
@@ -127,14 +127,14 @@ div#content {
         box-shadow: 0 8px var(--bright-color);
     }
 
-    .hero-content-container, .menu-item {
+    .sub-row-container {
         display: flex;
         flex-direction: row;
         width: 100%;
         gap: 2rem;
     }
 
-    .hero-para-div, .menu-item-content {
+    .hero-para-div, .menu-item-content, .text-container {
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
