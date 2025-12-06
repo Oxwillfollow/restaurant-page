@@ -1,4 +1,5 @@
-import { createDOMElements as createHome } from "./home";
+import { createDOMElements as createHome } from "./home/home.js";
+import './styles.css';
 
 const contentDiv = document.getElementById("content");
 
