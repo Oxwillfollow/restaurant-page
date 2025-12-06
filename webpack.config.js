@@ -8,12 +8,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   mode: 'development',
+  devtool: "eval-source-map",
   devServer: {
-    static: {
-      directory: path.join(__dirname, 'public'),
-    },
+    watchFiles: ["./src/template.html"],
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins:[
+    new HtmlWebpackPlugin({
+        template: "./src/template.html",
+    })],
   module: {
     rules: [
       {
