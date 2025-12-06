@@ -46,9 +46,11 @@ function createDOMElements(container){
     locationDiv.classList.add("location-container");
     const locationHeader = document.createElement("h2");
     const locationPara = document.createElement("p");
-    locationHeader.textContent = "Location";
+    const contactsPara = document.createElement("p");
+    locationHeader.textContent = "Location & Contacts";
     locationPara.textContent = "489 Yorkshire Road, Minas Tirith, Gondor";
-    locationDiv.append(locationHeader, locationPara);
+    contactsPara.textContent = "Phone: +1 234 567-8910";
+    locationDiv.append(locationHeader, locationPara, contactsPara);
 
     // append containers
     homeDiv.append(heroDiv, openingHoursDiv, locationDiv);
